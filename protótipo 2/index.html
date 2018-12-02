@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- via CDN
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="includes/owlcarousel/owl.carousel.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="includes/owlcarousel/owl.theme.default.min.css" rel="stylesheet" media="screen">
+
+    <!--css-->
+    <link href="css/estilos.css" rel="stylesheet" media="screen">
+    <!--<link href="css/theme.css" rel="stylesheet" media="screen">-->
+
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
+    <title>Wiki-Ema</title>
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div class="container-flex fixed-top bg-primary border-bottom shadow-lg">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">Wiki-Ema</a>
+                <button class="navbar-toggler rounded-circle border border-white shadow-lg" type="button" data-toggle="collapse"
+                    data-target="#menuWikiEma" aria-controls="menuWikiEma" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuWikiEma">
+                    <!-- links -->
+                    <ul class="navbar-nav mr-auto">
+                        <!--Ema Klabin-->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Ema Klabin</a>
+                        </li>
+                        <!--acervo-->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="acervo.html">Acervo</a>
+                        </li>
+                        <!--ambientes-->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="ambientes.html">Ambientes</a>
+                        </li>
+
+
+                        <!-- exemplo disabled
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled " href="#">Disabled</a>
+                                        </li>
+                                        -->
+
+                        <!-- Institucional -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="https://example.com" id="dropdown-menu"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Institucional</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-menu">
+                                <a class="dropdown-item text-primary" href="#">Sobre a Casa-museu</a>
+                                <a class="dropdown-item text-primary" href="#">Programação</a>
+                                <a class="dropdown-item text-primary" href="#">Contato</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- formulario de busca -->
+                    <form class="form-inline mt-3">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Encontre uma obra" aria-label="Encontre uma obra"
+                                aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- // formulario de busca -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- // menu -->
+
+    <!--  conteudo -->
+    <main role="main">
+
+        <!-- a magica inicia aqui -->
+
+        <!-- jumbotron descubra a coleção ema klabin -->
+        <div style="
+        background-image: url('assets/jumbotron.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;"
+            class="jumbotron jumbotron-fluid margin-top-home text-center jumbotron-bg text-white">
+            <!-- essa imagem precisa melhorar a forma como é colocada.
+        como ela está vindo pelo css, não consigo colocar um outro 
+        css que mascare e rebaixe a cor para gerar mais contraste. 
+        
+        - achar outro método de inserção da imagem de fundo
+
+        a classe criada 'jumbotron-bg' no estilos.css cria um gradiente
+        de transparente para o preto, mas não aparece pq dá preferência
+        para o css inline.
+        -->
+
+            <div class=" container">
+                <h1>Descubra a Coleção Ema Klabin!</h1>
+                <!-- formulario de busca -->
+                <div class="col-12">
+                    <form class="form-inline justify-content-center my-5">
+                        <div class="input-group input-group mb-3">
+                            <input type="text" class="form-control" style="width: 15rem" placeholder="encontre uma obra"
+                                aria-label="Encontre uma obra" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- // formulario de busca -->
+                <!-- features list -->
+                <div class="row justify-content-start">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-6 text-left">
+                        <ul>
+                            <li class="">Mais de 1600 itens na coleção</li>
+                            <li class="">
+                                <a href="" class="text-white">Artes Decorativas</a>,
+                                <a href="" class="text-white">Arte Africana</a>,
+                                <a href="" class="text-white">Arte Oriental</a>...</li>
+                            <li class="">
+                                <a href="" class="text-white">Lasar Segall</a>,
+                                <a href="" class="text-white">Tarsila do Amaral</a>,
+                                <a href="" class="text-white">Renoir,</a>
+                                <a href="" class="text-white">Rembrandt</a>...</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <!-- // features list -->
+                <!-- legenda obra jumbotron -->
+                <div class="row-fluid mt-4 mb-0">
+                    <small class="">
+                        *Relógio de parede. Jacob Boucheret (maquinário) e oficina de André-Charles Boulle (caixa).
+                        França,
+                        c. 1710-1720. Foto: Henrique Luz. <a href="single-obra.html">Ver obra →</a>
+                    </small>
+                </div>
+                <!-- legenda obra jumbotron -->
+            </div>
+        </div>
+        <!-- jumbotron descubra a coleção ema klabin -->
+
+
+        <!-- obra do mês -->
+        <div class="container">
+
+            <div class="row pb-4">
+                <div class="col mt-4">
+                    <h2>Obra do mês
+                        <p class="h5 text-muted">destaques selecionados mensalmente.</p>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- titulo obra -->
+                <div class="row pb-2">
+                    <div class="col">
+                        <h3>Rebanho em Repouso,
+                            <small class="text-muted">1947.</small>
+                        </h3>
+                    </div>
+                </div>
+                <!-- // titulo obra -->
+
+                <!-- infos obra -->
+                <div class="row pb-3 mb-2">
+                    <!-- imagem obra -->
+                    <div class="col-12 col-lg-7">
+                        <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
+                    </div>
+                    <!-- // imagem obra -->
+
+                    <!-- detalhes -->
+                    <div class="col-12 col-lg-5">
+                        <!-- autor -->
+                        <div class="row my-4">
+                            <div class="col-12">
+                                <div class="col-12 px-0">
+                                    <h3>Lasar Segall</h3>
+                                </div>
+                                <div class="col-12 px-0">
+                                    <p class="text-muted">(Vilna, 21 de julho de 1891
+                                        <br>— São Paulo, 2 de agosto de 1957)</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <p class="d-inline-flex d-lg-inline-flex"><a href="single-autor.html">Mais deste
+                                        autor →</a></p>
+                            </div>
+                        </div>
+                        <!-- autor -->
+                        <!-- informações -->
+                        <div class="row">
+                            <div class="col-12">
+                                <dl class="row mt-2">
+                                    <dt class="col-12 col-sm-5">Tombo:</dt>
+                                    <dd class="col-12 col-sm-7">M-1234</dt>
+                                    <dt class="col-12 col-sm-5">Origem:</dt>
+                                    <dd class="col-12 col-sm-7">Brasil</dd>
+                                    <dt class="col-12 col-sm-5">Data:</dt>
+                                    <dd class="col-12 col-sm-7">1947</dt>
+                                    <dt class="col-12 col-sm-5">Material:</dt>
+                                    <dd class="col-12 col-sm-7">Óleo com areia sobre tela.</dd>
+                                    <dt class="col-12 col-sm-5">Medidas:</dt>
+                                    <dd class="col-12 col-sm-7">73,0 x 92,0 cm</dd>
+                                    <dt class="col-12 col-sm-5">Ambiente:</dt>
+                                    <dd class="col-12 col-sm-7"><a href="single-ambiente.html">Quarto Principal</a></dd>
+                                    <dt class="col-12 col-sm-5">Núcleo:</dt>
+                                    <dd class="col-12 col-sm-7"><a href="single-nucleo.html">Arte Brasileira</a></dd>
+                                    <dt class="col-12 col-sm-5">Fotografia:</dt>
+                                    <dd class="col-12 col-sm-7">Nome do Fotógrafo</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- // informações -->
+                    </div>
+
+                    <!-- descrição -->
+                    <div class="col-12 mt-4">
+                        <h4>Descrição</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis felis sit amet
+                            augue
+                            ornare pulvinar. Nam sed condimentum neque. Donec eu sem a magna feugiat eleifend eu in
+                            nisl.
+                            Proin pellentesque orci sit amet arcu tempus viverra. Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing elit.
+                        </p>
+                    </div>
+                    <!-- //descrição -->
+
+                </div>
+                <!-- //infos obra -->
+            </div>
+        </div>
+        <!-- // obra do mês -->
+
+
+        <!-- a mágica termina aqui -->
+    </main>
+    <!-- // conteudo -->
+
+    <!-- rodapé wiki -->
+    <div class="container-fluid rodape-bg-color mt-5 border-top border-white shadow-lg">
+        <div class="container bg-transparent text-light">
+            <div class="row py-4">
+                <div class="col-md-12 col-lg-4 py-4">
+                    <h3>Wiki-Ema</h3>
+                    <p class="lead">
+                        Descubra a Coleção Ema Klabin
+                    </p>
+                </div>
+                <div class="col-md-12 col-lg-4 py-4">
+                    <h3>Institucional</h3>
+                    <ul>
+                        <li><a href="" class="text-white">A Casa-museu</a></li>
+                        <li><a href="" class="text-white">Sobre</a></li>
+                        <li><a href="" class="text-white">Programação</a></li>
+                        <li><a href="" class="text-white">Contato</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-12 col-lg-4 py-4">
+                    <h3>Assine nossa Newsletter</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="NomeNewsletter" class="sr-only">Nome</label>
+                            <input type="text" class="form-control" id="NomeNewsletter" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="EmailNewsletter" class="sr-only">Endereço de e-mail</label>
+                            <input type="email" class="form-control" id="EmailNewsletter" aria-describedby="emailHelp"
+                                placeholder="Email">
+                            <small id="emailHelp" class="form-text text-light">*Nunca compartilharemos seus dados
+                                com
+                                terceiros.</small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Assinar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row border-top py-4">
+                <small class="col-auto mr-auto">Fundação Ema Klabin. Todos os direitos reservados.</small>
+                <small class="col-auto">por <a href="https://hgodinho.com/?utm_source=wiki-ema&utm_medium=click" class="text-white">hgodinho.com</a></small>
+            </div>
+        </div>
+    </div>
+    <!-- // rodapé wiki -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="includes/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- CDN =-->
+    <!--
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        -->
+    <!-- // CDN -->
+</body>
+
+</html>
