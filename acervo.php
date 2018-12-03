@@ -77,7 +77,7 @@ class Acervo_Emak
         //add_filter('acf/settings/show_admin', '__return_false');
         add_filter('acf/settings/save_json', array($this, 'my_acf_json_save_point'));
         add_filter('acf/settings/load_json', array($this, 'my_acf_json_load_point'));
-        add_filter('acf/update_value/name=autor', array($this, 'bidirectional_acf_update_value', 10, 3));
+        add_filter('acf/update_value/name=autoria-bidirecional', 'bidirectional_acf_update_value', 10, 3);
     }
 
     /**
@@ -123,19 +123,17 @@ class Acervo_Emak
                 'menu_title' => __('Instalar Plugins', TEXT_DOMAIN),
                 'installing' => __('Instalando Plugins: %s', TEXT_DOMAIN),
                 'oops' => __('Alguma coisa deu errado com a API do plugin.', TEXT_DOMAIN),
-                'notice_can_install_required' => _n_noop('O ' . PLUGIN_NAME . ' plugin depende do seguinte plugin: %1$s.', 'O ' . PLUGIN_NAME . ' plugin depende dos seguintes plugins: %1$s.'),
-                'notice_can_install_recommended' => _n_noop('O ' . PLUGIN_NAME . ' plugin recomenda o uso do seguinte plugin: %1$s.', 'O ' . PLUGIN_NAME . ' plugin recomenda o uso dos seguintes plugins: %1$s.'),
+                'notice_can_install_required' => _n_noop('A ' . PLUGIN_NAME . ' depende do plugin: %1$s.', 'A ' . PLUGIN_NAME . ' depende destes plugins: %1$s.'),
                 'notice_cannot_install' => _n_noop('Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.'),
-                'notice_can_activate_required' => _n_noop('The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.'),
-                'notice_can_activate_recommended' => _n_noop('The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.'),
+                'notice_can_activate_required' => _n_noop('O seguinte plugin está inativo: %1$s.', 'Os seguintes plugins estão inativos: %1$s.'),
                 'notice_cannot_activate' => _n_noop('Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.'),
                 'notice_ask_to_update' => _n_noop('The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.'),
                 'notice_cannot_update' => _n_noop('Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.'),
                 'install_link' => _n_noop('Instalar plugin requerido', 'Instalar plugins requeridos'),
                 'activate_link' => _n_noop('Ativar plugin instalado', 'Ativar plugins instalados'),
-                'return' => __('Return to Required Plugins Installer', TEXT_DOMAIN),
-                'plugin_activated' => __('Plugin activated successfully.', TEXT_DOMAIN),
-                'complete' => __('All plugins installed and activated successfully. %s', TEXT_DOMAIN),
+                'return' => __('Voltar para o instalador de plugins requeridos', TEXT_DOMAIN),
+                'plugin_activated' => __('Plugin ativado com sucesso.', TEXT_DOMAIN),
+                'complete' => __('Todos os plugins instalados e ativados com sucesso. %s', TEXT_DOMAIN),
                 'nag_type' => 'updated',
             ),
         );

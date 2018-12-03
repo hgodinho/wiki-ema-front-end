@@ -6,7 +6,10 @@ versão `0.8`
 [keep a changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## `0.8`
+### Added
 - volta do plugin meta-box para criar campos clonáveis
+
+### Deprecated
 - retirada das metaboxes do acf: referencias, ligacoes externas e exposicoes
 
 
